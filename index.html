@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Premium Store 2026 - @Im_RA12</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Kantumruy Pro', sans-serif; scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-gradient-to-b from-red-600 to-red-700 text-white py-14 text-center shadow-xl">
+        <h1 class="text-4xl font-bold">YouTube Premium 2026</h1>
+        <p class="mt-3 text-lg opacity-90">បំពេញ Gmail រួចជ្រើសរើសកញ្ចប់ដែលអ្នកចង់បាន</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 text-center">
+                <span class="text-2xl">🚫</span>
+                <p class="text-sm font-bold mt-2 text-gray-700">គ្មានពាណិជ្ជកម្ម</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 text-center">
+                <span class="text-2xl">🎧</span>
+                <p class="text-sm font-bold mt-2 text-gray-700">ស្ដាប់ពេលបិទអេក្រង់</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 text-center">
+                <span class="text-2xl">📥</span>
+                <p class="text-sm font-bold mt-2 text-gray-700">ទាញយក Offline</p>
+            </div>
+            <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 text-center">
+                <span class="text-2xl">🎵</span>
+                <p class="text-sm font-bold mt-2 text-gray-700">YouTube Music</p>
+            </div>
+        </div>
+
+        <div class="max-w-md mx-auto mb-16 bg-white p-8 rounded-[2rem] shadow-xl border-2 border-red-500">
+            <label class="block text-gray-800 font-bold mb-3 text-lg text-center">បញ្ចូល Gmail របស់អ្នក៖</label>
+            <input type="email" id="customerEmail" placeholder="ឧទាហរណ៍៖ name@gmail.com" 
+                   class="w-full px-5 py-4 rounded-2xl border-2 border-gray-200 focus:border-red-500 focus:outline-none transition-all text-center text-lg font-medium">
+            <p class="text-xs text-gray-400 mt-4 text-center italic">* Gmail នេះនឹងត្រូវផ្ញើទៅកាន់ Telegram របស់ Admin ដោយស្វ័យប្រវត្តិ</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+            
+            <div class="bg-white rounded-3xl shadow-sm p-8 border border-gray-200 text-center hover:shadow-xl transition-all duration-300">
+                <h2 class="text-xl font-bold text-gray-700">កញ្ចប់ ១ ខែ</h2>
+                <div class="my-6">
+                    <span class="text-4xl font-bold text-red-600">$1.50</span>
+                </div>
+                <button onclick="sendToTelegram('១ ខែ ($1.50)')" class="w-full bg-gray-900 text-white py-4 rounded-2xl font-bold hover:bg-red-600 shadow-md transition-all">ទិញឥឡូវនេះ</button>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-2xl p-8 border-2 border-red-500 text-center transform md:-translate-y-4 relative">
+                <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-red-500 text-white text-xs px-4 py-1 rounded-full font-bold uppercase tracking-wider">ពេញនិយមបំផុត</span>
+                <h2 class="text-xl font-bold text-gray-700 pt-2">កញ្ចប់ ៦ ខែ</h2>
+                <div class="my-6">
+                    <span class="text-4xl font-bold text-red-600">$8.00</span>
+                </div>
+                <button onclick="sendToTelegram('៦ ខែ ($8.00)')" class="w-full bg-red-600 text-white py-4 rounded-2xl font-bold hover:bg-red-700 shadow-lg shadow-red-200 transition-all">ទិញឥឡូវនេះ</button>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-sm p-8 border border-gray-200 text-center hover:shadow-xl transition-all duration-300">
+                <h2 class="text-xl font-bold text-gray-700">កញ្ចប់ ១ ឆ្នាំ</h2>
+                <div class="my-6">
+                    <span class="text-4xl font-bold text-red-600">$15.00</span>
+                </div>
+                <button onclick="sendToTelegram('១ ឆ្នាំ ($15.00)')" class="w-full bg-gray-900 text-white py-4 rounded-2xl font-bold hover:bg-red-600 shadow-md transition-all">ទិញឥឡូវនេះ</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="text-center py-12 border-t bg-white">
+        <p class="text-gray-500 font-medium italic">© 2026 YouTube Store | Admin: @Im_RA12</p>
+    </footer>
+
+    <script>
+        function sendToTelegram(planName) {
+            const emailInput = document.getElementById('customerEmail');
+            const email = emailInput.value.trim();
+            
+            // បញ្ជាក់ថា Gmail ត្រូវបានបំពេញត្រឹមត្រូវ
+            if (!email || !email.includes('@')) {
+                alert('សូមបញ្ចូល Gmail ឱ្យបានត្រឹមត្រូវ ដើម្បីឱ្យ Admin ងាយស្រួលផ្ញើការ Invite!');
+                emailInput.focus();
+                return;
+            }
+            
+            const telegramUsername = 'Im_RA12';
+            const message = `សួស្តី Admin! ខ្ញុំចង់ទិញ YouTube Premium\n\n📦 កញ្ចប់៖ ${planName}\n📧 Gmail របស់ខ្ញុំ៖ ${email}\n\nសូមផ្ញើព័ត៌មានបាញ់លុយមកកាន់ខ្ញុំបន្ត!`;
+            const encodedMessage = encodeURIComponent(message);
+            
+            // បើក Telegram ទៅកាន់គណនីរបស់អ្នក
+            window.location.href = `https://t.me/${telegramUsername}?text=${encodedMessage}`;
+        }
+    </script>
+
+</body>
+</html>
